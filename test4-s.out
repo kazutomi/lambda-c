@@ -1,0 +1,47 @@
+Sun Jun 29 13:31:47 JST 2003
+
+Lambda expression string "1" -> 1
+Original Lexp: 1
+Copied Lexp: 1
+Lambda expression string "2" -> 2
+Original Lexp: 2
+Copied Lexp: 2
+Lambda expression string "1000" -> 1000
+Original Lexp: 1000
+Copied Lexp: 1000
+Lambda expression string "(L 1.1)" -> (L 1.1)
+Original Lexp: (L 1.1)
+Copied Lexp: (L 1.1)
+Lambda expression string "(L 2.5)" -> (L 2.5)
+Original Lexp: (L 2.5)
+Copied Lexp: (L 2.5)
+Lambda expression string "(L 1.(L 1.1))" -> (L 1.(L 1.1))
+Original Lexp: (L 1.(L 1.1))
+Copied Lexp: (L 1.(L 1.1))
+Lambda expression string "(L 1.(L 2.1))" -> (L 1.(L 2.1))
+Original Lexp: (L 1.(L 2.1))
+Copied Lexp: (L 1.(L 2.1))
+Lambda expression string "(1 1)" -> (1 1)
+Original Lexp: (1 1)
+Copied Lexp: (1 1)
+Lambda expression string "(2 1)" -> (2 1)
+Original Lexp: (2 1)
+Copied Lexp: (2 1)
+Lambda expression string "(L 1.(1 2))" -> (L 1.(1 2))
+Original Lexp: (L 1.(1 2))
+Copied Lexp: (L 1.(1 2))
+Lambda expression string "(1 (L 3.1))" -> (1 (L 3.1))
+Original Lexp: (1 (L 3.1))
+Copied Lexp: (1 (L 3.1))
+Lambda expression string "((L 2.2) (L 3.1))" -> ((L 2.2) (L 3.1))
+Original Lexp: ((L 2.2) (L 3.1))
+Copied Lexp: ((L 2.2) (L 3.1))
+Lambda expression string "(((L 2.2) (L 3.1)) 5)" -> (((L 2.2) (L 3.1)) 5)
+Original Lexp: (((L 2.2) (L 3.1)) 5)
+Copied Lexp: (((L 2.2) (L 3.1)) 5)
+Lambda expression string "((L 1.(1 1)) (L 1.(1 1)))" -> ((L 1.(1 1)) (L 1.(1 1)))
+Original Lexp: ((L 1.(1 1)) (L 1.(1 1)))
+Copied Lexp: ((L 1.(1 1)) (L 1.(1 1)))
+Lambda expression string "(L 2.((L 1.(2 (1 1)))(L 1.(2 (1 1)))))" -> (L 2.((L 1.(2 (1 1))) (L 1.(2 (1 1)))))
+Original Lexp: (L 2.((L 1.(2 (1 1))) (L 1.(2 (1 1)))))
+Copied Lexp: (L 2.((L 1.(2 (1 1))) (L 1.(2 (1 1)))))

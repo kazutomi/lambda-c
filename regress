@@ -1,0 +1,41 @@
+#!/bin/sh
+#
+# regress - regression test driver
+#
+# usage: regress <executable> [<executable> ...]
+#
+# Compares <executable>'s output to <executable>.out
+#
+succeeded=""
+failed=""
+for x in "$@"; do
+  if [ ! -r "$x.out" ]; then
+    echo "$x.out does not exists; creating it as the original test data" 1>&2
+    ./do-test "$x" > "$x.out"
+    succeeded="$succeeded $x"
+  else
+    ./do-test "$x" > "$x.out.$$"
+    if ./compare-test-results "$x.out" "$x.out.$$" > "$x.diff.$$"; then
+      rm -f "$x.diff.$$"
+      mv "$x.out.$$" "$x.out"	# to keep last-succeeded date
+      succeeded="$succeeded $x"
+    else
+      echo "$x results changed; previous $x.out, last $x.out.$$, diff $x.diff.$$" 1>&2
+      failed="$failed $x"
+    fi
+  fi
+done
+echo "**********************************"
+echo "regress (PID $$) test results:"
+if [ "x$succeeded" != x ]; then
+  echo "Succeeded: $succeeded"
+fi
+if [ "x$failed" != x ]; then
+  echo "Failed: $failed"
+fi
+
+if [ "x$failed" != x ]; then
+  exit 1
+else
+  exit 0
+fi

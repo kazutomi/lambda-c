@@ -1,0 +1,622 @@
+Sun Jun 29 13:31:48 JST 2003
+
+*** 1
+cell #0:
+  type 1 (VAR)
+    var = 1 (bdist = -1)
+*** 2
+cell #1:
+  type 1 (VAR)
+    var = 2 (bdist = -1)
+*** 1000
+cell #3:
+  type 1 (VAR)
+    var = 1000 (bdist = -1)
+*** (L 1.1)
+cell #7:
+  type 2 (ABST)
+    bv = 1, body cell=#2
+cell #2:
+  type 1 (VAR)
+    var = 1 (bdist = 1)
+*** (L 2.5)
+cell #5:
+  type 2 (ABST)
+    bv = 2, body cell=#6
+cell #6:
+  type 1 (VAR)
+    var = 5 (bdist = -2)
+*** (L 1.(L 1.1))
+cell #14:
+  type 2 (ABST)
+    bv = 1, body cell=#15
+cell #15:
+  type 2 (ABST)
+    bv = 1, body cell=#4
+cell #4:
+  type 1 (VAR)
+    var = 1 (bdist = 1)
+*** (L 1.(L 2.1))
+cell #11:
+  type 2 (ABST)
+    bv = 1, body cell=#12
+cell #12:
+  type 2 (ABST)
+    bv = 2, body cell=#13
+cell #13:
+  type 1 (VAR)
+    var = 1 (bdist = 2)
+*** (1 1)
+cell #8:
+  type 3 (APPL)
+    left cell=#10, right cell=#9
+cell #10:
+  type 1 (VAR)
+    var = 1 (bdist = -1)
+cell #9:
+  type 1 (VAR)
+    var = 1 (bdist = -1)
+*** (2 1)
+cell #29:
+  type 3 (APPL)
+    left cell=#31, right cell=#30
+cell #31:
+  type 1 (VAR)
+    var = 2 (bdist = -1)
+cell #30:
+  type 1 (VAR)
+    var = 1 (bdist = -1)
+*** (L 1.(1 2))
+cell #25:
+  type 2 (ABST)
+    bv = 1, body cell=#26
+cell #26:
+  type 3 (APPL)
+    left cell=#28, right cell=#27
+cell #28:
+  type 1 (VAR)
+    var = 1 (bdist = 1)
+cell #27:
+  type 1 (VAR)
+    var = 2 (bdist = -2)
+*** (1 (L 3.1))
+cell #21:
+  type 3 (APPL)
+    left cell=#24, right cell=#22
+cell #24:
+  type 1 (VAR)
+    var = 1 (bdist = -1)
+cell #22:
+  type 2 (ABST)
+    bv = 3, body cell=#23
+cell #23:
+  type 1 (VAR)
+    var = 1 (bdist = -2)
+*** ((L 2.2) (L 3.1))
+cell #16:
+  type 3 (APPL)
+    left cell=#19, right cell=#17
+cell #19:
+  type 2 (ABST)
+    bv = 2, body cell=#20
+cell #20:
+  type 1 (VAR)
+    var = 2 (bdist = 1)
+cell #17:
+  type 2 (ABST)
+    bv = 3, body cell=#18
+cell #18:
+  type 1 (VAR)
+    var = 1 (bdist = -2)
+*** (((L 2.2) (L 3.1)) 5)
+cell #57:
+  type 3 (APPL)
+    left cell=#59, right cell=#58
+cell #59:
+  type 3 (APPL)
+    left cell=#62, right cell=#60
+cell #62:
+  type 2 (ABST)
+    bv = 2, body cell=#63
+cell #63:
+  type 1 (VAR)
+    var = 2 (bdist = 1)
+cell #60:
+  type 2 (ABST)
+    bv = 3, body cell=#61
+cell #61:
+  type 1 (VAR)
+    var = 1 (bdist = -2)
+cell #58:
+  type 1 (VAR)
+    var = 5 (bdist = -1)
+*** (L 1.(1 (L 2.2)))
+cell #52:
+  type 2 (ABST)
+    bv = 1, body cell=#53
+cell #53:
+  type 3 (APPL)
+    left cell=#56, right cell=#54
+cell #56:
+  type 1 (VAR)
+    var = 1 (bdist = 1)
+cell #54:
+  type 2 (ABST)
+    bv = 2, body cell=#55
+cell #55:
+  type 1 (VAR)
+    var = 2 (bdist = 1)
+*** (L 1.((L 1.1) 2))
+cell #47:
+  type 2 (ABST)
+    bv = 1, body cell=#48
+cell #48:
+  type 3 (APPL)
+    left cell=#50, right cell=#49
+cell #50:
+  type 2 (ABST)
+    bv = 1, body cell=#51
+cell #51:
+  type 1 (VAR)
+    var = 1 (bdist = 1)
+cell #49:
+  type 1 (VAR)
+    var = 2 (bdist = -2)
+*** (L 1.(L 2.(L 3.((1 2) 3))))
+cell #39:
+  type 2 (ABST)
+    bv = 1, body cell=#40
+cell #40:
+  type 2 (ABST)
+    bv = 2, body cell=#41
+cell #41:
+  type 2 (ABST)
+    bv = 3, body cell=#42
+cell #42:
+  type 3 (APPL)
+    left cell=#44, right cell=#43
+cell #44:
+  type 3 (APPL)
+    left cell=#46, right cell=#45
+cell #46:
+  type 1 (VAR)
+    var = 1 (bdist = 3)
+cell #45:
+  type 1 (VAR)
+    var = 2 (bdist = 2)
+cell #43:
+  type 1 (VAR)
+    var = 3 (bdist = 1)
+*** (L 1.(L 2.(L 3.((L 2.(3 2)) 2))))
+cell #126:
+  type 2 (ABST)
+    bv = 1, body cell=#127
+cell #127:
+  type 2 (ABST)
+    bv = 2, body cell=#32
+cell #32:
+  type 2 (ABST)
+    bv = 3, body cell=#33
+cell #33:
+  type 3 (APPL)
+    left cell=#35, right cell=#34
+cell #35:
+  type 2 (ABST)
+    bv = 2, body cell=#36
+cell #36:
+  type 3 (APPL)
+    left cell=#38, right cell=#37
+cell #38:
+  type 1 (VAR)
+    var = 3 (bdist = 2)
+cell #37:
+  type 1 (VAR)
+    var = 2 (bdist = 1)
+cell #34:
+  type 1 (VAR)
+    var = 2 (bdist = 2)
+*** (L 1.(L 2.((L 3.((L 2.(3 2)) 2)) 1)))
+cell #115:
+  type 2 (ABST)
+    bv = 1, body cell=#116
+cell #116:
+  type 2 (ABST)
+    bv = 2, body cell=#117
+cell #117:
+  type 3 (APPL)
+    left cell=#119, right cell=#118
+cell #119:
+  type 2 (ABST)
+    bv = 3, body cell=#120
+cell #120:
+  type 3 (APPL)
+    left cell=#122, right cell=#121
+cell #122:
+  type 2 (ABST)
+    bv = 2, body cell=#123
+cell #123:
+  type 3 (APPL)
+    left cell=#125, right cell=#124
+cell #125:
+  type 1 (VAR)
+    var = 3 (bdist = 2)
+cell #124:
+  type 1 (VAR)
+    var = 2 (bdist = 1)
+cell #121:
+  type 1 (VAR)
+    var = 2 (bdist = 2)
+cell #118:
+  type 1 (VAR)
+    var = 1 (bdist = 2)
+*** (L 1.((L 2.((L 3.((L 2.(3 2)) 2)) 1)) 1))
+cell #102:
+  type 2 (ABST)
+    bv = 1, body cell=#103
+cell #103:
+  type 3 (APPL)
+    left cell=#105, right cell=#104
+cell #105:
+  type 2 (ABST)
+    bv = 2, body cell=#106
+cell #106:
+  type 3 (APPL)
+    left cell=#108, right cell=#107
+cell #108:
+  type 2 (ABST)
+    bv = 3, body cell=#109
+cell #109:
+  type 3 (APPL)
+    left cell=#111, right cell=#110
+cell #111:
+  type 2 (ABST)
+    bv = 2, body cell=#112
+cell #112:
+  type 3 (APPL)
+    left cell=#114, right cell=#113
+cell #114:
+  type 1 (VAR)
+    var = 3 (bdist = 2)
+cell #113:
+  type 1 (VAR)
+    var = 2 (bdist = 1)
+cell #110:
+  type 1 (VAR)
+    var = 2 (bdist = 2)
+cell #107:
+  type 1 (VAR)
+    var = 1 (bdist = 2)
+cell #104:
+  type 1 (VAR)
+    var = 1 (bdist = 1)
+*** ((L 1.(1 1)) (L 1.(1 1)))
+cell #93:
+  type 3 (APPL)
+    left cell=#98, right cell=#94
+cell #98:
+  type 2 (ABST)
+    bv = 1, body cell=#99
+cell #99:
+  type 3 (APPL)
+    left cell=#101, right cell=#100
+cell #101:
+  type 1 (VAR)
+    var = 1 (bdist = 1)
+cell #100:
+  type 1 (VAR)
+    var = 1 (bdist = 1)
+cell #94:
+  type 2 (ABST)
+    bv = 1, body cell=#95
+cell #95:
+  type 3 (APPL)
+    left cell=#97, right cell=#96
+cell #97:
+  type 1 (VAR)
+    var = 1 (bdist = 1)
+cell #96:
+  type 1 (VAR)
+    var = 1 (bdist = 1)
+*** (((L 1.(1 1)) (L 1.(1 1))) (L 2.2))
+cell #81:
+  type 3 (APPL)
+    left cell=#84, right cell=#82
+cell #84:
+  type 3 (APPL)
+    left cell=#89, right cell=#85
+cell #89:
+  type 2 (ABST)
+    bv = 1, body cell=#90
+cell #90:
+  type 3 (APPL)
+    left cell=#92, right cell=#91
+cell #92:
+  type 1 (VAR)
+    var = 1 (bdist = 1)
+cell #91:
+  type 1 (VAR)
+    var = 1 (bdist = 1)
+cell #85:
+  type 2 (ABST)
+    bv = 1, body cell=#86
+cell #86:
+  type 3 (APPL)
+    left cell=#88, right cell=#87
+cell #88:
+  type 1 (VAR)
+    var = 1 (bdist = 1)
+cell #87:
+  type 1 (VAR)
+    var = 1 (bdist = 1)
+cell #82:
+  type 2 (ABST)
+    bv = 2, body cell=#83
+cell #83:
+  type 1 (VAR)
+    var = 2 (bdist = 1)
+*** (L 2.((L 1.(2 (1 1))) (L 1.(2 (1 1)))))
+cell #67:
+  type 2 (ABST)
+    bv = 2, body cell=#68
+cell #68:
+  type 3 (APPL)
+    left cell=#75, right cell=#69
+cell #75:
+  type 2 (ABST)
+    bv = 1, body cell=#76
+cell #76:
+  type 3 (APPL)
+    left cell=#80, right cell=#77
+cell #80:
+  type 1 (VAR)
+    var = 2 (bdist = 2)
+cell #77:
+  type 3 (APPL)
+    left cell=#79, right cell=#78
+cell #79:
+  type 1 (VAR)
+    var = 1 (bdist = 1)
+cell #78:
+  type 1 (VAR)
+    var = 1 (bdist = 1)
+cell #69:
+  type 2 (ABST)
+    bv = 1, body cell=#70
+cell #70:
+  type 3 (APPL)
+    left cell=#74, right cell=#71
+cell #74:
+  type 1 (VAR)
+    var = 2 (bdist = 2)
+cell #71:
+  type 3 (APPL)
+    left cell=#73, right cell=#72
+cell #73:
+  type 1 (VAR)
+    var = 1 (bdist = 1)
+cell #72:
+  type 1 (VAR)
+    var = 1 (bdist = 1)
+*** ((L 2.((L 1.(2 (1 1))) (L 1.(2 (1 1))))) (L 3.3))
+cell #242:
+  type 3 (APPL)
+    left cell=#245, right cell=#243
+cell #245:
+  type 2 (ABST)
+    bv = 2, body cell=#246
+cell #246:
+  type 3 (APPL)
+    left cell=#253, right cell=#247
+cell #253:
+  type 2 (ABST)
+    bv = 1, body cell=#254
+cell #254:
+  type 3 (APPL)
+    left cell=#66, right cell=#255
+cell #66:
+  type 1 (VAR)
+    var = 2 (bdist = 2)
+cell #255:
+  type 3 (APPL)
+    left cell=#65, right cell=#64
+cell #65:
+  type 1 (VAR)
+    var = 1 (bdist = 1)
+cell #64:
+  type 1 (VAR)
+    var = 1 (bdist = 1)
+cell #247:
+  type 2 (ABST)
+    bv = 1, body cell=#248
+cell #248:
+  type 3 (APPL)
+    left cell=#252, right cell=#249
+cell #252:
+  type 1 (VAR)
+    var = 2 (bdist = 2)
+cell #249:
+  type 3 (APPL)
+    left cell=#251, right cell=#250
+cell #251:
+  type 1 (VAR)
+    var = 1 (bdist = 1)
+cell #250:
+  type 1 (VAR)
+    var = 1 (bdist = 1)
+cell #243:
+  type 2 (ABST)
+    bv = 3, body cell=#244
+cell #244:
+  type 1 (VAR)
+    var = 3 (bdist = 1)
+*** ((L 1.(2 1)) (2 3))
+cell #234:
+  type 3 (APPL)
+    left cell=#238, right cell=#235
+cell #238:
+  type 2 (ABST)
+    bv = 1, body cell=#239
+cell #239:
+  type 3 (APPL)
+    left cell=#241, right cell=#240
+cell #241:
+  type 1 (VAR)
+    var = 2 (bdist = -2)
+cell #240:
+  type 1 (VAR)
+    var = 1 (bdist = 1)
+cell #235:
+  type 3 (APPL)
+    left cell=#237, right cell=#236
+cell #237:
+  type 1 (VAR)
+    var = 2 (bdist = -1)
+cell #236:
+  type 1 (VAR)
+    var = 3 (bdist = -1)
+*** ((L 1.(2 1)) (L 2.3))
+cell #227:
+  type 3 (APPL)
+    left cell=#230, right cell=#228
+cell #230:
+  type 2 (ABST)
+    bv = 1, body cell=#231
+cell #231:
+  type 3 (APPL)
+    left cell=#233, right cell=#232
+cell #233:
+  type 1 (VAR)
+    var = 2 (bdist = -2)
+cell #232:
+  type 1 (VAR)
+    var = 1 (bdist = 1)
+cell #228:
+  type 2 (ABST)
+    bv = 2, body cell=#229
+cell #229:
+  type 1 (VAR)
+    var = 3 (bdist = -2)
+*** ((L 1.(L 2.(3 (1 2)))) (L 2.(2 3)))
+cell #215:
+  type 3 (APPL)
+    left cell=#220, right cell=#216
+cell #220:
+  type 2 (ABST)
+    bv = 1, body cell=#221
+cell #221:
+  type 2 (ABST)
+    bv = 2, body cell=#222
+cell #222:
+  type 3 (APPL)
+    left cell=#226, right cell=#223
+cell #226:
+  type 1 (VAR)
+    var = 3 (bdist = -3)
+cell #223:
+  type 3 (APPL)
+    left cell=#225, right cell=#224
+cell #225:
+  type 1 (VAR)
+    var = 1 (bdist = 2)
+cell #224:
+  type 1 (VAR)
+    var = 2 (bdist = 1)
+cell #216:
+  type 2 (ABST)
+    bv = 2, body cell=#217
+cell #217:
+  type 3 (APPL)
+    left cell=#219, right cell=#218
+cell #219:
+  type 1 (VAR)
+    var = 2 (bdist = 1)
+cell #218:
+  type 1 (VAR)
+    var = 3 (bdist = -2)
+*** ((L 1.(1 1)) ((1 1) 1))
+cell #205:
+  type 3 (APPL)
+    left cell=#211, right cell=#206
+cell #211:
+  type 2 (ABST)
+    bv = 1, body cell=#212
+cell #212:
+  type 3 (APPL)
+    left cell=#214, right cell=#213
+cell #214:
+  type 1 (VAR)
+    var = 1 (bdist = 1)
+cell #213:
+  type 1 (VAR)
+    var = 1 (bdist = 1)
+cell #206:
+  type 3 (APPL)
+    left cell=#208, right cell=#207
+cell #208:
+  type 3 (APPL)
+    left cell=#210, right cell=#209
+cell #210:
+  type 1 (VAR)
+    var = 1 (bdist = -1)
+cell #209:
+  type 1 (VAR)
+    var = 1 (bdist = -1)
+cell #207:
+  type 1 (VAR)
+    var = 1 (bdist = -1)
+*** ((L 2.(L 1.(1 2))) (1 2))
+cell #196:
+  type 3 (APPL)
+    left cell=#200, right cell=#197
+cell #200:
+  type 2 (ABST)
+    bv = 2, body cell=#201
+cell #201:
+  type 2 (ABST)
+    bv = 1, body cell=#202
+cell #202:
+  type 3 (APPL)
+    left cell=#204, right cell=#203
+cell #204:
+  type 1 (VAR)
+    var = 1 (bdist = 1)
+cell #203:
+  type 1 (VAR)
+    var = 2 (bdist = 2)
+cell #197:
+  type 3 (APPL)
+    left cell=#199, right cell=#198
+cell #199:
+  type 1 (VAR)
+    var = 1 (bdist = -1)
+cell #198:
+  type 1 (VAR)
+    var = 2 (bdist = -1)
+*** ((L 1.(L 2.(1 2))) (1 2))
+cell #187:
+  type 3 (APPL)
+    left cell=#191, right cell=#188
+cell #191:
+  type 2 (ABST)
+    bv = 1, body cell=#192
+cell #192:
+  type 2 (ABST)
+    bv = 2, body cell=#193
+cell #193:
+  type 3 (APPL)
+    left cell=#195, right cell=#194
+cell #195:
+  type 1 (VAR)
+    var = 1 (bdist = 2)
+cell #194:
+  type 1 (VAR)
+    var = 2 (bdist = 1)
+cell #188:
+  type 3 (APPL)
+    left cell=#190, right cell=#189
+cell #190:
+  type 1 (VAR)
+    var = 1 (bdist = -1)
+cell #189:
+  type 1 (VAR)
+    var = 2 (bdist = -1)

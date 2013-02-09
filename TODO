@@ -1,0 +1,13 @@
+todo:
+* user interface for constructing lambda cell structure
+  var, abst, appl, copy, destroy
+* abstract view of Lexp?
+
+* Lequiv: check alpha-convertibleness
+* var num canonicalization (also good for regression test)
+
+* define interface (cf. testz.c) -> hide initialization
+* reinitialize
+
+
+Hmm, cannot get benefit from GC_malloc if I have my own pool...

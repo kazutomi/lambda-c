@@ -1,0 +1,24 @@
+#!/bin/sh
+#
+# do-test - show date and run a test
+# 
+# usage: do-test <executable>
+#
+# <executable> should be an absolute path or preceeded by "."
+#
+case $# in
+  1) exec="$1" ;;
+  *) echo "usage: do-test <executable>" 1>&2 ; exit 1 ;;
+esac
+if [ ! -x "$exec" ]; then
+  echo "executable $exec not found" 1>&2
+  exit 1
+fi
+# to avoid $PATH consulting
+case "$exec" in
+  */*) ;;
+  *) exec="./$exec" ;;
+esac
+env LANG=C date
+echo ''
+"$exec"

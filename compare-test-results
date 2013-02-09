@@ -1,0 +1,18 @@
+#!/bin/sh
+#
+# compare-test-results - compare output (disregarding first line which contains date)
+# 
+# usage: compare-test-results <file1> <file2>
+#
+case $# in
+  2) file1="$1"
+     file2="$2" ;;
+  *) echo "usage: compare-test-results <file1> <file2>" 1>&2
+     exit 1 ;;
+esac
+sed '1s/.*/(date was here in original file)/' $file1 > $file1.tmp.$$
+sed '1s/.*/(date was here in original file)/' $file2 > $file2.tmp.$$
+diff -u $file1.tmp.$$ $file2.tmp.$$
+exitcode=$?
+rm -f $file1.tmp.$$ $file2.tmp.$$
+exit $exitcode

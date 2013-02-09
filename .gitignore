@@ -1,0 +1,13 @@
+CVS
+.cvsignore
+*.a
+*.so
+*.out
+*.bak
+*.swp
+*.core
+tags
+test[0-9]*
+trash
+!test[0-9]*.[ch]
+!test[0-9]*.out
